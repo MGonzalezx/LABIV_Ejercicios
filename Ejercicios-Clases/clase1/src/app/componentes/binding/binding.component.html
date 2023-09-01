@@ -1,0 +1,17 @@
+
+<!-- 
+    {{}} - Interpolation c -> v 
+    []  - Property Binding c -> v
+    ()  - Event Binding v -> c
+    [()]  - Two way Binding v <-> c
+-->
+
+<h1>{{name}}</h1>
+
+<input type="text" [(ngModel)]="apellido" placeholder="Ingrese apellido">
+
+<input type="button" [value]="btnLabel" (click)="onClick($event)">
+
+
+<h2>{{apellido}}</h2>
+
