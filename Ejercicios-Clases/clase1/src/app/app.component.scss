@@ -1,9 +1,53 @@
-input{
-    margin-right: 2em;
+body {
+    background-color: antiquewhite;
+    padding: 0 2rem;
 }
 
-section{
+main {
     display: flex;
     justify-content: center;
     align-items: center;
+   
+}
+
+.container {
+    background-color: white;
+    border-radius: 1rem;
+    max-width: 300px;
+    min-height: 300px;
+}
+
+.container .edades{
+    text-align: center;
+    
+}
+
+.container .edades h3{
+    margin-top: 0.2rem;
+    font-weight: 200;
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.container .botones{
+    text-align: center;
+    margin-left: 0.4rem;
+    margin-right: 0.4rem;
+    margin-top: 0.4rem;
+    margin-bottom: 0.4rem;
+    
+}
+
+.container .operaciones h3{
+    margin-top: 0.2rem;
+    font-weight: 200;
+    font-size: 1rem;
+    width: 80%;
+    margin: 0 auto;
+}
+.container .operaciones{
+    text-align: center;
+    
+    
 }

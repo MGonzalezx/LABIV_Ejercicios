@@ -7,19 +7,31 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *  -->
 
-<body>
-    <section>
-        <input type="text" [(ngModel)]="edadUno" placeholder="edadUno" />
-        <input type="text" [(ngModel)]="edadDos" placeholder="edadDos" />
-        
+<!-- <body>
+  <main>
+    <section class="container container-front">
+      <div class="edades">
+        <h3>Introducir primera edad</h3>
+        <input type="number" [(ngModel)]="edadUno" placeholder="edadUno" style="text-align:center;"/>
+        <h3>Introducir segunda edad</h3>
+        <input type="number" [(ngModel)]="edadDos" placeholder="edadDos" style="text-align:center;" />
+      </div>
+
+      <div class="botones">
         <input type="button" [value]="btnCalcular" (click)="onClick($event)" />
-        <input type="button" [value]="btnLimpiar" (click)="onClick($event)" />
-        
-        <input type="text" placeholder="promedio" />
-        <input type="text" placeholder="suma" />
+        <input type="button" [value]="btnLimpiar" (click)="onClickLimpiar($event)" />
+      </div>
+     
+      <div class="operaciones">
+        <h3>Promedio edades</h3>
+        <input type="number" placeholder="promedio" [disabled]="isDisabled" [ngModel]="promedio" style="text-align:center;"/>
+        <h3>Suma edades</h3>
+        <input type="number" placeholder="suma" [disabled]="isDisabled" [ngModel]="suma" style="text-align:center;"/>
+      </div>
+      
     </section>
-  
-</body>
+  </main>
+</body> -->
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 <!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
@@ -30,4 +42,5 @@
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
 <!-- <app-binding></app-binding> -->
+<app-login></app-login>
 <router-outlet></router-outlet>
